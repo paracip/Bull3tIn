@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.flavienlaurent.discrollview.lib.DiscrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/android_animated_discroll_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <com.flavienlaurent.discrollview.lib.DiscrollViewContent
+            android:id="@+id/discroll_view_content_layout"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/logo"
+    android:weightSum="1">
+    <ImageView
+        android:layout_width="291dp"
+        android:layout_height="271dp"
+        android:layoutAnimation="@anim/fadein"
+        android:background="@drawable/bulltin"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView123"
+        android:layout_marginTop="135dp" />
+
+    <TextView
+        android:text="Tap to continue. . ."
+        android:layout_width="match_parent"
+        android:layout_marginTop="-20dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:id="@+id/textView123"
+        android:textStyle="normal"
+        android:textSize="14sp" />
+
+</LinearLayout>
+
+            <TextView
+                android:id="@+id/musicbutton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="Music       "
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="#0b0d0f"
+                android:onClick="musicon"
+                android:background="@drawable/musical_notes"
+                discrollve:discrollve_fromBgColor="#E3E3E3"
+                discrollve:discrollve_threshold="0.2"
+                discrollve:discrollve_toBgColor="#FFAA0D"
+                android:fontFamily="sans-serif-condensed" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:text="PDC"
+                android:textColor="#fcfcfc"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="30sp"
+                android:onClick="artson"
+                android:background="@drawable/pdc"
+
+                discrollve:discrollve_fromBgColor="#E3E3E3"
+                discrollve:discrollve_threshold="0.2"
+                discrollve:discrollve_toBgColor="#8a0000"
+                android:id="@+id/pdcbutton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="Drams                                "
+                android:id="@+id/dramsbutton"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:onClick="dramson"
+                android:background="@drawable/drams"
+                android:textSize="30sp"
+                discrollve:discrollve_fromBgColor="#E3E3E3"
+                discrollve:discrollve_threshold="0.3"
+                discrollve:discrollve_toBgColor="#3BA3E8"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="       Technical"
+                android:id="@+id/techbutton"
+                android:gravity="center"
+                android:onClick="techon"
+                android:background="@drawable/tech"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="30sp"
+                discrollve:discrollve_fromBgColor="#E3E3E3"
+                discrollve:discrollve_threshold="0.2"
+                discrollve:discrollve_toBgColor="#FF7F50"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="Sports                          "
+                android:gravity="center"
+                android:onClick="sportson"
+                android:textSize="30sp"
+                android:background="@drawable/football"
+                discrollve:discrollve_fromBgColor="#E3E3E3"
+                android:fontFamily="sans-serif-condensed"
+                discrollve:discrollve_threshold="0.3"
+                discrollve:discrollve_toBgColor="#F4D00A"
+                android:id="@+id/sportsbutton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="                      Speaker's\n             Club"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:onClick="speakon"
+                android:background="@drawable/podium"
+                discrollve:discrollve_fromBgColor="#E3E3E3"
+                discrollve:discrollve_threshold="0.3"
+                discrollve:discrollve_toBgColor="#8ab4f7"
+                android:id="@+id/debatebutton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="Arts               "
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:onClick="apcon"
+                android:background="@drawable/apc1"
+                discrollve:discrollve_fromBgColor="#E3E3E3"
+                discrollve:discrollve_threshold="0.3"
+                discrollve:discrollve_toBgColor="#88cc88"
+                android:id="@+id/apcbutton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+
+        </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
+
+    </com.flavienlaurent.discrollview.lib.DiscrollView>
